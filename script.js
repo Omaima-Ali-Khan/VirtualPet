@@ -62,4 +62,12 @@ function interactWithPet() {
             alert("Invalid choice. Please select a valid option.");
             break;
     }
-}
+
+       // Ask the user if they want to continue interacting
+       let continuePlaying = confirm(`Would you like to continue interacting with ${myPet.name}?`);
+       if (continuePlaying) {
+           interactWithPet();
+       } else {
+           alert("Goodbye!");
+       }
+   }
