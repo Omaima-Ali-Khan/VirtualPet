@@ -43,4 +43,23 @@ function interactWithPet() {
     1) Dress-up and Photoshoot
     2) Hide and Seek
     3) Hygiene Test
-    4) Not Interested (I'm lazy)`);}
+    4) Not Interested (I'm lazy)`);
+
+    switch (action) {
+        case "1":
+            myPet.dressUp();
+            break;
+        case "2":
+            myPet.hideAndSeek();
+            break;
+        case "3":
+            myPet.hygieneTest();
+            break;
+        case "4":
+            alert(`Goodbye! You are not interested in ${myPet.name} right now.`);
+            return;
+        default:
+            alert("Invalid choice. Please select a valid option.");
+            break;
+    }
+}
