@@ -71,3 +71,6 @@ function interactWithPet() {
            alert("Goodbye!");
        }
    }
+   
+// Start the interaction
+interactWithPet();
