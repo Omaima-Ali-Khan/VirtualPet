@@ -32,3 +32,15 @@ let petType = prompt("What kind of pet is it (e.g., Dinosaur, Leopard, Crocodile
 let petAge = parseInt(prompt(`How aged is ${petName}?`)) || 0; // Default to 0 if NaN
 let petHappiness = parseInt(prompt(`How thrilled is ${petName} with you -really?`)) || 0; // Default to 0 if NaN
 let petHunger = parseInt(prompt(`How much is ${petName} food-obsessed?`)) || 0; // Default to 0 if NaN
+
+
+// Create the new pet instance
+let myPet = new Pet(petName, petType, petAge, petHappiness, petHunger);
+
+// Function to interact with the pet
+function interactWithPet() {
+    let action = prompt(`What would you like to do with ${myPet.name}? Choose any one:
+    1) Dress-up and Photoshoot
+    2) Hide and Seek
+    3) Hygiene Test
+    4) Not Interested (I'm lazy)`);}
