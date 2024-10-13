@@ -25,3 +25,10 @@ function Pet(name, type, age, happiness, hunger) {
         alert(`Time for a hygiene test! ${this.name} is all clean and ready!`);
     };
 }
+
+// Ask for user input to create a new pet
+let petName = prompt("What's your pet name?");
+let petType = prompt("What kind of pet is it (e.g., Dinosaur, Leopard, Crocodile)🙄?");
+let petAge = parseInt(prompt(`How aged is ${petName}?`)) || 0; // Default to 0 if NaN
+let petHappiness = parseInt(prompt(`How thrilled is ${petName} with you -really?`)) || 0; // Default to 0 if NaN
+let petHunger = parseInt(prompt(`How much is ${petName} food-obsessed?`)) || 0; // Default to 0 if NaN
